@@ -29,6 +29,12 @@
   background-color: brown;
 }
 @media (min-width: 641px) and (max-width: 1200px) {
+  .status {
+    font-size: 4vw;
+  }
+  .header__title {
+    font-size: 5vw;
+  }
   .content {
     width: 100%;
   }
@@ -56,6 +62,12 @@
 }
 }
 @media (max-width: 640px) {
+  .header__title {
+    font-size: 5vw;
+  }
+  .status {
+    font-size: 4vw;
+  }
   .content {
     width: 100%;
   }

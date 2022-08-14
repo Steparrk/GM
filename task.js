@@ -8,25 +8,25 @@ for(let index = 1; index < 10; index++) {
 	hole(index).addEventListener('click', ()=> {
 
 		if(hole(index).classList.contains('hole_has-mole')) {
-			dead.innerText++;
+			dead.innerText--;
 		}else{
-			lost.innerText++;
+			lost.innerText--;
 		}
 	changeWin();
 	})
 function changeWin() {
-	if(dead.innerText == 10) {
+	if(dead.innerText == 0) {
 		reset();
 		return alert('Победа!');
 	}
-	if(lost.innerText == 10) {
+	if(lost.innerText == 0) {
 		reset();
 		return alert('Попробуй победить!');
 	}
 }
 function reset() {
-	dead.innerText = 0;
-	lost.innerText = 0;
+	dead.innerText = 10;
+	lost.innerText = 10;
 }
 }
 
